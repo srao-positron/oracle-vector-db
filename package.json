@@ -1,0 +1,56 @@
+{
+  "name": "oracle-vector-db",
+  "version": "0.1.0",
+  "description": "Pinecone-like vector database library for Oracle Autonomous Database",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "oracle-vector": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "oracle",
+    "vector",
+    "database",
+    "embeddings",
+    "similarity-search",
+    "autonomous-database"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.12.1",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "dotenv": "^16.4.1",
+    "inquirer": "^9.2.14",
+    "lru-cache": "^10.1.0",
+    "openai": "^4.28.0",
+    "ora": "^7.0.1",
+    "oracledb": "^6.2.0",
+    "p-queue": "^7.4.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.9",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.11.16",
+    "@types/oracledb": "^6.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.4",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

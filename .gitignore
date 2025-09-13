@@ -1,0 +1,16 @@
+node_modules/
+dist/
+*.log
+.env
+.env.local
+.env.*
+!.env.example
+.oracle-vector/
+*.swp
+*.swo
+.DS_Store
+coverage/
+.nyc_output/
+*.tgz
+test_data.json
+wallet/
